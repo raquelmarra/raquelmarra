@@ -1,0 +1,283 @@
+/*
+GLOBAIS
+*/
+html {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.check-simbolo {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* section {
+    height: 100vh;
+    width: 100vw;
+} */
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+
+aside h1 {
+    flex-grow: 1;
+}
+
+aside nav {
+    flex-grow: 3;
+}
+
+/*
+BARRA DE NAVEGAÇÃO
+*/
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(#17e6e6 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+        background-size 0.3s,
+        background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+nav a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 16px;
+}
+
+nav ul li.ativo a {
+    color: #ff17c9;
+}
+
+/*
+SEÇÃO HERO
+*/
+#hero {
+    background-image: url('./Raquel9.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hero .cobertura {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#hero .caixa h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#hero .caixa h2 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+#hero .caixa button {
+    margin-top: 2rem;
+}
+
+
+.cta {
+    height: 3rem;
+    width: 10rem;
+    /*
+    background-image: -moz-linear-gradient(to right, #ff5757, #8c52ff);
+    background-image: -webkit-linear-gradient(to right, #ff5757, #8c52ff);
+    background-image: linear-gradient(to right, #ff5757, #8c52ff);
+    */
+    background-color: #dd27b2;
+    box-shadow: 5px 5px 10px #17e6e6;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+
+/*Segunda Pagina*/
+
+section#pacotes {
+    background-color: black;
+}
+
+#pacotes h2 {
+    text-align: center;
+    color: #17e6e6;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ff17c9;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+#opcoes {
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li.opcao {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 3rem;
+    background-color:black;
+    color: aliceblue;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform .2s;
+}
+
+li.opcao:hover {
+    transform: scale(1.25);
+}
+
+li.opcao:nth-child(2n) {
+    box-shadow: 5px 5px 15px #17e6e6;
+
+}
+
+li.opcao:nth-child(2n-1) {
+    box-shadow: 5px 5px 15px #ff17c9;
+
+}
+
+.titulo {
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+
+.preco {
+    font-weight: bold;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
+.beneficios {
+    margin-top: 2.5rem;
+    flex-grow: 3;
+}
+
+.beneficios li {
+    margin-bottom: 16px;
+}
+
+.beneficios li::before {
+    content: '\2600';
+    margin-right: 5px;
+    color: #ff17c9;
+}
+
+#pacotes .caixa {
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+#pacotes .cta {
+    margin-top: 5rem;
+}
+
+/* Seção modalidades */
+
+#modalidades {
+    background-color: black;
+}
+
+#modalidades h2 {
+    text-align: center;
+    color: #17e6e6;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ff17c9;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+#modalidades #tipos {
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding: 4rem;
+}
+
+#modalidades .tipo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 420px;
+    border: 1px solid black;
+    padding: 1.5rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+#modalidades .caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
