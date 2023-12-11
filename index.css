@@ -91,7 +91,7 @@ nav ul li.ativo a {
 SEÇÃO HERO
 */
 #hero {
-    background-image: url('./Raquel9.jpg');
+    background-image: url('./home-hero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ SEÇÃO HERO
 }
 
 
-/*Segunda Pagina*/
+/*Seção Pacotes*/
 
 section#pacotes {
     background-color: black;
@@ -251,7 +251,8 @@ li.opcao:nth-child(2n-1) {
     color: #17e6e6;
     text-transform: uppercase;
     text-shadow: 2px 2px 2px #ff17c9;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
 }
 
@@ -264,12 +265,9 @@ li.opcao:nth-child(2n-1) {
 }
 
 #modalidades .tipo {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
     height: 420px;
     border: 1px solid black;
-    padding: 1.5rem;
+    padding: 0rem;
     color: aliceblue;
     font-size: 1.5rem;
 }
@@ -280,4 +278,59 @@ li.opcao:nth-child(2n-1) {
     justify-content: center;
     /* align-items: center; */
 
+}
+
+#pole-dance.tipo {
+    background-image: url('./pole-acro02.jpeg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px #ff17c9;
+    /* color: #ff17c9; */
+    text-shadow: 2px 2px 2px #ff17c9;
+
+}
+
+#modalidades .cobertura {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#pole-acro.tipo {
+    background-image: url('./pole-acro04.jpeg');
+    background-position: center 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px #17e6e6;
+    /* color: #ff17c9; */
+    text-shadow: 2px 2px 2px #ff17c9;
+}
+
+#sexy-pole.tipo {
+    background-image: url('./sexy-pole02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px #17e6e6;
+    /* color: #ff17c9; */
+    text-shadow: 2px 2px 2px #ff17c9;
+
+}
+
+#pole-on-heels.tipo {
+    background-image: url('./pole-on-heels.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px #ff17c9;
+    /* color: #ff17c9; */
+    text-shadow: 2px 2px 2px #ff17c9;
 }
