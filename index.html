@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raquel Marra</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-</head>
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script></head>
 <body>
     <aside>
         <h1>
@@ -44,6 +50,7 @@
             </div>
         </div>
     </section>
+
     <section id="pacotes">
         <div class="caixa">
             <h2>Pacotes</h2>
@@ -52,7 +59,7 @@
                     <h4 class="titulo">Aula Experimental</h4>
                     <div class="preco">R$ 30,00</div>
                     <ul class="beneficios">
-                        <li><span class="check-simbolo"></span>Horários Flexíveis</li>
+                        <li>Horários Flexíveis</li>
                         <li>Válido em 15 dias</li>
                     </ul>
                 </li>
@@ -90,29 +97,120 @@
     <section id="modalidades">
         <div class="caixa">
             <h2>Modalidades</h2>
-            <ul id="tipos">
-                <li id="pole-dance" class="tipo">
-                    <div class="cobertura">
-                        <h4 class="titulo">Pole Dance</h4>
-                    </div>
-                </li>
-                <li id="pole-acro" class="tipo">
-                    <div class="cobertura">
-                    <h4 class="titulo">Pole Acrobático</h4>
-                    </div>
-                </li>
-                <li id="sexy-pole" class="tipo">
-                    <div class="cobertura">
-                    <h4 class="titulo">Sexy Pole</h4>
-                    </div>
-                </li>
-                <li id="pole-on-heels" class="tipo">
-                    <div class="cobertura">
-                    <h4 class="titulo">Pole On Heels</h4>
-                    </div>
-                </li>
-            </ul>
+            <div class="swiper">
+                <ul id="tipos" class="swiper-wrapper">
+                    <li id="pole-dance" class="tipo swiper-slide">
+                        <div id="requisitos">
+                            <h3>Matériais e Pré Requisitos</h3>
+                            <ul>
+                                <li>Não possui pré requisito pra começar</li>
+                                <li>Toalhinha ou paninhos de mão</li>
+                                <li>Meias e ponteiras opcional</li>
+                            </ul>
+                        </div>  
+                        <div id="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wzm9ZBk9pTk?si=5d3D4LmPQcXIYXyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div id="definicao">
+                            <h3>Pole Dance</h3>
+                            <p>Essa modalidade trabalha elementos coreograficos, musicalidade em conjunto com os movimentos feitos na barra que são giros, figuras, combos acrobáticos...</p>
+                        </div>
+                    </li>
+                    <li id="pole-acro" class="tipo swiper-slide">
+                        <div class="cobertura">
+                            <h4 class="titulo">Pole Acrobático</h4>
+                        </div>
+                    </li>
+                    <li id="sexy-pole" class="tipo swiper-slide">
+                        <div class="cobertura">
+                            <h4 class="titulo">Sexy Pole</h4>
+                        </div>
+                    </li>
+                    <li id="pole-on-heels" class="tipo swiper-slide">
+                        <div class="cobertura">
+                            <h4 class="titulo">Pole On Heels</h4>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
     </section>
+
+    <section id="horarios">
+        <div class="caixa">
+            <div class="left-column">
+                <div id="carrossel">
+                    <div class="cobertura">
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <h2>Horários</h2>
+                <p>Uma das vantagens de uma aula particular, é a flexbilidade para marcar sua aula de acordo com sua rotina do dia a dia</p>
+                <ul class="possibilidades">
+                    <li>Um hora de aula só sua;</li>
+                    <li>Atenção exclusiva no seu aprendizado;</li>
+                    <li>Metodologia progressiva;</li>
+                </ul>
+                <button class="cta">Agende sua aula</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="eventos-e-parcerias">
+        <div class="caixa">
+            <div class="left-column">
+                <h2>Eventos e Parcerias</h2>
+                <p>Entre em contato para mais detalhes</p>
+                <ul class="exemplos">
+                    <li>Apresentações de Pole Dance</li>
+                    <li>Worshops e Aulões</li>
+                </ul>
+                <button class="cta">Entre em Contato</button>
+            </div> 
+            <div class="right-column">
+                <div id="foto-evento">
+                    <img src="eventos 2.jpg" alt="" width="520">
+                </div>
+                <div id="video-evento">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PWjE1ufz5Lg?si=c8rUdgEigLLesfBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mim">
+        <div class="caixa">
+            <h2>Sobre Mim</h2>
+            <p class="sobre-mim">Me chamo Raquel Marra, sou instrutora de Pole Dance, iniciei no pole no final de 2020, me apaixonei por essa modalidade incrivel e em 2023 me capacitei, durante as aulas você ira aprender figuras acrobáticas, giros é elementos coreograficos, sigo uma metodologia de progressão onde cada aluno tem suas aulas niveladas de acordo com seu nivel é desenvolvimento no Pole.</p>
+            <div id="depoimentos">
+                <h4 class="titulo">Depoimentos de Alunxs</h4>
+                <ul>
+                    <li class="depoimento ativo">
+                        <p>Me chamo Raquel Marra, sou instrutora de Pole Dance, iniciei no pole no final de 2020, me apaixonei por essa modalidade incrivel e em 2023 me capacitei pra dar aulas, durante as aulas você irar aprender figuras acrobáticas, giros é elementos coreograficos, sigo uma metodologia de progressão onde cada aluno tem suas aulas niveladas de acordo com seu nivel é desenvolvimento no Pole.</p>
+                        <h4 class="nome">Nome da pessoa</h4>
+                    </li>
+                    <li class="depoimento">
+                        <p>Me chamo Raquel Marra, sou instrutora de Pole Dance, iniciei no pole no final de 2020, me apaixonei por essa modalidade incrivel e em 2023 me capacitei pra dar aulas, comigo você irar desenvolver tecnicas de acrobacias, giros é elementos coreograficos durante as aulas no Pole, sigo uma metodologia de progressão onde cada aluno tem suas aulas niveladas de acordo com seu desenvolvimento, dou aulas para o nivel básico e inicio do intermediario.</p>
+                        <h4 class="nome">Nome da Pessoa</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+/*
+MODALIDADES
+*/
+#poledance .caixa {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+#requisitos {
+    box-shadow: 5px 5px 15px #ff17c9;
+    background-color:black;
+    width: 400px;
+    padding: 2rem;
+}
+
+#requisitos h3 {
+    color: #17e6e6;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ff17c9;
+    font-size: 1.3rem;
+}
+
+#requisitos li::before {
+    content: '\2600';
+    margin-right: 5px;
+    color: #ff17c9;
+}
+
+#video {
+    box-shadow: 5px 5px 15px #17e6e6;
+    background-color:black;
+    width: 419px;
+}
+
+#definicao {
+    box-shadow: 5px 5px 15px #ff17c9;
+    background-color:black;
+    width: 400px;
+    padding: 2rem;
+}
+
+#definicao h3 {
+    color: #17e6e6;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ff17c9;
+    font-size: 1.3rem;
+}

@@ -1,93 +1,4 @@
 /*
-GLOBAIS
-*/
-html {
-    margin: 0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-.check-simbolo {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* section {
-    height: 100vh;
-    width: 100vw;
-} */
-
-aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    color: white;
-}
-
-aside h1 {
-    flex-grow: 1;
-}
-
-aside nav {
-    flex-grow: 3;
-}
-
-/*
-BARRA DE NAVEGAÇÃO
-*/
-nav a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-
-    display: inline-block;
-    padding-bottom:2px;
-    background-image: linear-gradient(#17e6e6 0 0);
-    background-position: 0 100%; /*OR bottom left*/
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    transition:
-        background-size 0.3s,
-        background-position 0s 0.3s; /*change after the size immediately*/
-}
-
-nav a:hover {
-    background-position: 100% 100%; /*OR bottom right*/
-    background-size: 100% 2px;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul li {
-    margin: 16px;
-}
-
-nav ul li.ativo a {
-    color: #ff17c9;
-}
-
-/*
 SEÇÃO HERO
 */
 #hero {
@@ -131,22 +42,6 @@ SEÇÃO HERO
     margin-top: 2rem;
 }
 
-
-.cta {
-    height: 3rem;
-    width: 10rem;
-    /*
-    background-image: -moz-linear-gradient(to right, #ff5757, #8c52ff);
-    background-image: -webkit-linear-gradient(to right, #ff5757, #8c52ff);
-    background-image: linear-gradient(to right, #ff5757, #8c52ff);
-    */
-    background-color: #dd27b2;
-    box-shadow: 5px 5px 10px #17e6e6;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-}
 
 
 /*Seção Pacotes*/
@@ -246,6 +141,11 @@ li.opcao:nth-child(2n-1) {
     background-color: black;
 }
 
+#modalidades a {
+    text-decoration: none;
+    color: white;
+}
+
 #modalidades h2 {
     text-align: center;
     color: #17e6e6;
@@ -256,13 +156,6 @@ li.opcao:nth-child(2n-1) {
     font-size: 2.5rem;
 }
 
-#modalidades #tipos {
-    display:grid;
-    grid-template-columns: auto auto;
-    column-gap: 3rem;
-    row-gap: 3rem;
-    padding: 4rem;
-}
 
 #modalidades .tipo {
     height: 420px;
@@ -272,23 +165,8 @@ li.opcao:nth-child(2n-1) {
     font-size: 1.5rem;
 }
 
-#modalidades .caixa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-
-}
-
 #pole-dance.tipo {
-    background-image: url('./pole-acro02.jpeg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow: 5px 5px 15px #ff17c9;
-    /* color: #ff17c9; */
-    text-shadow: 2px 2px 2px #ff17c9;
-
+color: white;    
 }
 
 #modalidades .cobertura {
@@ -310,7 +188,6 @@ li.opcao:nth-child(2n-1) {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px #17e6e6;
-    /* color: #ff17c9; */
     text-shadow: 2px 2px 2px #ff17c9;
 }
 
@@ -320,9 +197,8 @@ li.opcao:nth-child(2n-1) {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px #17e6e6;
-    /* color: #ff17c9; */
     text-shadow: 2px 2px 2px #ff17c9;
-
+    
 }
 
 #pole-on-heels.tipo {
@@ -331,6 +207,227 @@ li.opcao:nth-child(2n-1) {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 15px #ff17c9;
-    /* color: #ff17c9; */
     text-shadow: 2px 2px 2px #ff17c9;
+}
+
+
+/*Seção Horarios*/
+
+#horarios {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 5rem 0;
+}
+
+#horarios .caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+#horarios .left-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carrossel {
+    background-image: url('./horarios\ 01.jpeg');
+    width: 460px;
+    box-shadow: 5px 5px 15px #ff17c9;
+    height: 660px;
+    background-position: center;
+    background-size: cover;
+}
+
+#carrossel .cobertura {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+#horarios .right-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding-right: 2rem;
+}
+    
+#horarios h2 {
+    text-shadow: 2px 2px 2px #ff17c9;
+    text-align: left;
+    color: #17e6e6;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+#horarios p {
+    color: aliceblue;
+    font-size: 1.49rem;
+}
+
+#horarios .possibilidades li {
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0;
+}
+
+.possibilidades li::before {
+    content: '\2600';
+    margin-right: 5px;
+    color: #ff17c9;
+}
+
+#horarios .cta {
+    margin-top: 5rem; 
+    height: 4rem;
+    width: 12rem;
+}
+
+/*Seção Eventos e Parcerias*/
+
+#eventos-e-parcerias {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 5rem 0;
+}
+
+#eventos-e-parcerias .caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+#eventos-e-parcerias .left-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+
+}
+
+#eventos-e-parcerias .right-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 3rem;
+}
+
+#eventos-e-parcerias h2 {
+    text-shadow: 2px 2px 2px #ff17c9;
+    text-align: left;
+    color: #17e6e6;
+    font-size: 2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 8rem;
+    
+}
+
+#eventos-e-parcerias p {
+    color: aliceblue;
+    font-size: 1.49rem;
+}
+
+#eventos-e-parcerias li {
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0;
+}
+
+#eventos-e-parcerias li::before {
+    content: '\2600';
+    margin-right: 5px;
+    color: #ff17c9;
+}
+
+#eventos-e-parcerias .cta {
+    margin-top: 5rem; 
+    height: 4rem;
+    width: 12rem;
+}
+
+#eventos-e-parcerias #foto-evento {
+    max-width: 520px;
+    box-shadow: 5px 5px 15px #ff17c9;
+}
+
+#eventos-e-parcerias #video-evento {
+    position: relative;
+    bottom: 100px;
+    right: 220px;
+}
+
+/*Seção Sobre Mim*/
+
+#sobre-mim .caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre-mim .aspas {
+    text-shadow: 2px 2px 2px #ff17c9;
+    text-align: center;
+    color: #17e6e6;
+    font-size: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#sobre-mim h2 {
+    text-shadow: 2px 2px 2px #ff17c9;
+    text-align: center;
+    color: #17e6e6;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+#sobre-mim p {
+    color: aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+    max-width: 1120px;
+}
+
+#sobre-mim h4.titulo {
+    color: #17e6e6;
+    text-shadow: 2px 2px 2px #ff17c9;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#sobre-mim #depoimentos .depoimento {
+    display: none;
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    color:aliceblue;
+    text-align: center;
+
+}#sobre-mim #depoimentos .depoimento.ativo {
+    display: flex;
+    flex-direction: column;
 }
